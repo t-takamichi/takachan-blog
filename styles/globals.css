@@ -1,26 +1,163 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  background: black;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 40px;
+}
+
+header a {
+  color: #fff;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-back {
+  background: #f4f4f4;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+
+.card {
+  margin: 30px auto;
+  width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.card-img {
+  border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.card-text {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+
+.card-link a {
+  text-decoration: none;
+  color: #0bd;
+  margin: 0 10px;
+}
+
+.card-link a:hover {
+  color: #0090aa;
+}
+
+@media (max-width: 500px) {
+  .card-box {
+    grid-template-columns: 1fr;
   }
-  body {
-    color: white;
-    background: black;
-  }
+}
+
+.container {
+  text-align:center;
+  margin: auto 200px;
+}
+.container .title{
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.container .content{
+  margin-bottom: 20px;
+  text-align: left;
+  color: black;
+  font-size: 30px;
+  line-height: 1.5;
+}
+.container .content > pre {
+  background: #fafafa; 
+}
+
+.container .content > pre > code {
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+.container .content > ol > li{
+
+  font-size: 23px;
+  padding-left: 3em;
+  text-indent: -1em;
+  list-style-type: none;
+}
+
+.content h1 {
+  font-size: 23px;
+}
+.content p {
+  font-size: 18px;
+}
+
+.content h2 {
+  font-size: 12px;
+  
+}
+
+.content h3 {
+  font-size: 10px;
+}
+
+.content h4 {
+  font-size: 20px;
+  
 }
